@@ -1370,6 +1370,11 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==
 
+favicon-marquee@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/favicon-marquee/-/favicon-marquee-2.1.0.tgz#df7389b8d3e30f98f5a272dee1c79797558c3790"
+  integrity sha512-HeR/GQZ02Uk/slmnfjtlvAqOiPv7uIw2+AFt4LKCsA7BnDdQ49kc82Tfce4CTx8nqZmf1CSxNmKfpxcEEmvbbQ==
+
 fclone@^1.0.11:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/fclone/-/fclone-1.0.11.tgz#10e85da38bfea7fc599341c296ee1d77266ee640"

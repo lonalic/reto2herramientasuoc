@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Definimos todos los campos del formulario
   const formulario = document.querySelector('.formulario');
+  if (formulario === null) return;
   const nombre = formulario.querySelector('#nombre');
   const apellidos = formulario.querySelector('#apellidos');
   const titulo = formulario.querySelector('#titulo');
@@ -55,3 +56,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 });
+
+import FaviconMarquee from 'favicon-marquee';
+
+function generaFavicon() {
+  const faviconMarquee = new FaviconMarquee({
+    text: 'Web no oficial de la Oreja de Van Gogh',
+    background: '#000',
+    foreground: '#FFF',
+    step: 4.5,
+  });
+
+  faviconMarquee.start();
+}
+
+window.onload = generaFavicon;
