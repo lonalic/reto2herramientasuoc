@@ -1,13 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Página de inicio de la web no oficial de la banda La Oreja de Van Gogh"
+    />
+    <title>
+      Página de inicio de la web no oficial del grupo La Oreja de Van Gogh
+    </title>
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="app.js"></script>
   </head>
-  <body>
-    <h1>Hello, Prueba!</h1>
+  <body class="margins">
+    <include src="src/header.html"></include>
+    <main>
+      <section class="titulo">
+        <h1>Portada</h1>
+      </section>
+      <section>
+        <p>
+          Bienvenidos a la vibrante historia detrás de La Oreja de Van Gogh!
+          Sumérgete en el universo musical de esta emblemática banda española,
+          donde cada canción cuenta una historia, cada nota emociona y cada
+          acorde es un viaje. Desde sus inicios hasta sus éxitos más recientes,
+          acompáñanos en este recorrido por la trayectoria de un grupo que ha
+          marcado una época en la música española.
+        </p>
+        <figure>
+          <img src="./images/portada.jpeg" />
+          <figcaption>© Bing Dall-E 3</figcaption>
+        </figure>
+
+        <p>
+          Descubre el fascinante mundo de La Oreja de Van Gogh a través de
+          nuestra página web. Desde su formación en San Sebastián hasta su
+          consagración como una de las bandas más influyentes en el panorama
+          musical, te invitamos a explorar cada faceta de su carrera. Conoce los
+          secretos detrás de sus letras, los momentos más memorables de sus
+          conciertos y las anécdotas que han forjado su leyenda. ¡Prepárate para
+          adentrarte en un universo lleno de pasión, melodía y arte!
+        </p>
+      </section>
+    </main>
     <include src="src/footer.html"></include>
   </body>
 </html>

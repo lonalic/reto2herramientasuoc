@@ -1,9 +1,214 @@
+:root {
+  --fuenteH1: 2.2rem;
+  --fuenteH2: 1.3rem;
+  --fuenteH3: 1.1rem;
+  --fuenteMasPequena: 0.6rem;
+  --fuenteSuperPequena: 0.8rem;
+  --fuentePequena: 1rem;
+  --fuentePequenaExtra: 1.2rem;
+  --fuenteMedia: 1.5rem;
+  --fuenteGrande: 2rem;
+  --texto: #1d1c1c;
+  --contrario: #55109f;
+  --fondoClaro: #c0ffee;
+  --fondoOscuro: #bada55;
+  --fondoBoton: #7edbbc;
+  --fondoBotonHover: #0a366b;
+  --fondoBloqueLista: #f0f0f0;
+  --fondoEnlace: #2a5685;
+  --fondoenlaceHover: #03254e;
+}
+
+h1 {
+  font-size: var(--fuenteH1);
+}
+
+h2 {
+  font-size: var(--fuenteH2);
+}
+
+h3 {
+  font-size: var(--fuenteH3);
+}
+
+html,
 body {
-    height: 100vh;
-    color: #1f1f1f;
-    background: linear-gradient(to bottom, #bada55, #c0ffee);
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    -webkit-transition: background 200ms;
-    -moz-transition: background 200ms;
-    transition: background 200ms;
+  color: #1f1f1f;
+  background: linear-gradient(to bottom, var(--fondoOscuro), var(--fondoClaro));
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: var(--fuenteMedia);
+  line-height: 1.5rem;
+  color: var(--texto);
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-size: var(--fuenteMasPequena);
+  font-style: italic;
+  text-align: center;
+}
+
+.margins {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header section.logo {
+  text-align: center;
+  display: block;
+  font-size: var(--fuenteGrande);
+  margin-bottom: 20px;
+}
+
+header {
+  font-size: var(--fuentePequena);
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+header a {
+  color: var(--texto);
+}
+
+header a:hover {
+  color: var(--fondoBotonHover);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav li {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid var(--fondoBotonHover);
+  border-radius: 5px;
+  background-color: var(--fondoBoton);
+}
+
+main {
+  text-align: center;
+  flex: 1;
+  font-size: var(--fuentePequena);
+}
+
+main .titulo {
+  text-align: center;
+}
+
+main .conciertos-lista {
+  display: grid;
+  font-size: var(--fuentePequena);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+main .conciertos-lista a {
+  color: var(--fondoEnlace);
+}
+
+main .conciertos-lista a:hover {
+  color: var(--fondoenlaceHover);
+}
+
+main .conciertos-lista article {
+  border: 1px solid var(--fondoBotonHover);
+  background-color: var(--fondoBloqueLista);
+  margin-right: 15px;
+  padding: 10px;
+}
+
+main .conciertos-lista article img {
+  max-width: 100px;
+  height: auto;
+}
+
+main .conciertos-lista article .autor {
+  font-size: var(--fuenteMasPequena);
+  font-style: italic;
+}
+
+main .conciertos-lista article .leer-mas {
+  display: block;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
+
+footer ul {
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: var(--fuentePequena);
+}
+
+footer ul li {
+  margin: 0;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  header nav li {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  main .conciertos-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: var(--fuenteMasPequena);
+  }
+}
+
+@media only screen and (max-width: 466px) {
+  header section.logo {
+    font-size: var(--fuentePequenaExtra);
+    letter-spacing: -2px;
+    line-height: 23px;
+    margin-bottom: 10px;
+  }
+  main .conciertos-lista {
+    grid-template-columns: 1fr;
+  }
 }
