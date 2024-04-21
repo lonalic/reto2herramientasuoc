@@ -189,11 +189,13 @@ section.conciertos-relacionados {
   margin-bottom: 20px;
 }
 
-section.conciertos-relacionados ul a {
+section.conciertos-relacionados ul a,
+main .listado-enlaces a {
   color: var(--fondoEnlace);
 }
 
-section.conciertos-relacionados ul a:hover {
+section.conciertos-relacionados ul a:hover,
+main .listado-enlaces a:hover {
   color: var(--fondoenlaceHover);
 }
 
@@ -270,6 +272,10 @@ main .listado-enlaces {
   padding: 20px;
   border-radius: 7px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main .listado-enlaces > ul > li > ul {
+  margin-bottom: 60px;
 }
 
 /* Estilos para footer */
