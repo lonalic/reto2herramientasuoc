@@ -21,6 +21,7 @@
 
 h1 {
   font-size: var(--fuenteH1);
+  line-height: 2rem;
 }
 
 h2 {
@@ -29,6 +30,7 @@ h2 {
 
 h3 {
   font-size: var(--fuenteH3);
+  margin: 5px 0;
 }
 
 html,
@@ -125,39 +127,63 @@ main .titulo {
   text-align: center;
 }
 
+main .concierto-detalle {
+  display: flex;
+  font-size: var(--fuentePequena);
+}
+
 main .conciertos-lista {
   display: grid;
   font-size: var(--fuentePequena);
   grid-template-columns: repeat(4, 1fr);
 }
 
-main .conciertos-lista a {
+main .conciertos-lista a,
+main .concierto-detalle a {
   color: var(--fondoEnlace);
 }
 
-main .conciertos-lista a:hover {
+main .conciertos-lista a:hover,
+main .concierto-detalle a:hover {
   color: var(--fondoenlaceHover);
 }
 
-main .conciertos-lista article {
+main .conciertos-lista article,
+main .concierto-detalle article {
   border: 1px solid var(--fondoBotonHover);
   background-color: var(--fondoBloqueLista);
   margin-right: 15px;
+  margin-bottom: 15px;
   padding: 10px;
 }
 
-main .conciertos-lista article img {
+main .conciertos-lista article img,
+main .concierto-detalle article img {
   max-width: 100px;
   height: auto;
 }
 
-main .conciertos-lista article .autor {
+main .conciertos-lista article .autor,
+main .concierto-detalle article .autor {
   font-size: var(--fuenteMasPequena);
   font-style: italic;
 }
 
-main .conciertos-lista article .leer-mas {
+main .conciertos-lista article .leer-mas,
+main .concierto-detalle article .leer-mas {
   display: block;
+}
+
+section.conciertos-relacionados {
+  margin-bottom: 20px;
+}
+
+section.conciertos-relacionados ul a {
+  color: var(--fondoEnlace);
+}
+
+section.conciertos-relacionados ul a:hover {
+  color: var(--fondoenlaceHover);
 }
 
 footer {
@@ -184,9 +210,14 @@ footer ul li {
     width: 100%;
   }
   header nav li {
-    margin: 0;
+    margin: 0 0 2px 0;
     width: 100%;
     text-align: center;
+  }
+
+  main .concierto-detalle,
+  main .conciertos-lista {
+    font-size: var(--fuenteSuperPequena);
   }
 
   main .conciertos-lista {
