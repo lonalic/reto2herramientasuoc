@@ -18,6 +18,8 @@
   --fondoBloqueLista: #f0f0f0;
   --fondoEnlace: #2a5685;
   --fondoenlaceHover: #03254e;
+  --fondoExito: #44af48;
+  --fondoError: #db8585;
 }
 
 h1 {
@@ -203,7 +205,6 @@ main.presentacion {
 
 .formulario {
   border: 1px solid var(--fondoBotonHover);
-  background-color: var(--fondoBloqueLista);
   width: 80%;
   max-width: 1000px;
   margin: 20px auto;
@@ -232,7 +233,7 @@ main.presentacion {
 
 .contacto button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: var(--fondoBotonHover);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -243,7 +244,7 @@ main.presentacion {
 .mensaje-error {
   margin-top: 20px;
   padding: 10px;
-  background-color: #4caf50;
+  background-color: var(--fondoExito);
   color: white;
   text-align: center;
   border-radius: 5px;
@@ -252,11 +253,23 @@ main.presentacion {
 
 .contacto .mensaje-error {
   display: none;
-  background-color: rgb(219, 133, 133);
+  background-color: var(--fondoError);
 }
 
 .contacto .campo-invalido {
-  background-color: rgb(219, 133, 133);
+  background-color: var(--fondoError);
+}
+
+/* Estilos para los enlaces */
+
+main .listado-enlaces {
+  border: 1px solid var(--fondoBotonHover);
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para footer */
