@@ -96,6 +96,36 @@
           </figcaption>
         </figure>
       </section>
+      <section class="contacto">
+        <h2>Formulario de contacto</h2>
+        <span
+          >¿Te gustaría ponerte en contacto con el grupo? Rellena el siguiente
+          formulario para ello:</span
+        >
+        <form class="formulario" onsubmit="return validarFormulario(event);">
+          <div class="campo">
+            <label for="nombre">Nombre (*):</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+          <div class="campo">
+            <label for="apellidos">Apellidos (*):</label>
+            <input type="text" id="apellidos" name="apellidos" />
+          </div>
+          <div class="campo">
+            <label for="titulo">Título (*):</label>
+            <input type="text" id="titulo" name="titulo" />
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje (*):</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="campo">
+            <button type="submit" id="enviar">Enviar</button>
+          </div>
+          <div class="mensaje-enviado">El mensaje ha sido enviado</div>
+          <div class="mensaje-error">Hay campos sin completar</div>
+        </form>
+      </section>
     </main>
     <include src="src/footer.html"></include>
   </body>
