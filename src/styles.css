@@ -20,6 +20,7 @@
   --fondoenlaceHover: #03254e;
   --fondoExito: #44af48;
   --fondoError: #db8585;
+  --logo: #596b1e;
 }
 
 h1 {
@@ -86,42 +87,17 @@ header section.logo {
   display: block;
   font-size: var(--fuenteGrande);
   margin-bottom: 20px;
+  color: var(--logo);
+  text-shadow: 1px 1px 8px var(--fondoBloqueLista),
+    1px 2px 1px var(--fondoClaro);
 }
 
-header {
+header,
+footer {
   font-size: var(--fuentePequena);
   font-weight: 600;
   margin-top: 12px;
   margin-bottom: 12px;
-}
-
-header a {
-  color: var(--texto);
-}
-
-header a:hover {
-  color: var(--fondoBotonHover);
-}
-
-header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-header nav ul {
-  display: flex;
-  align-items: center;
-}
-
-header nav li {
-  text-transform: uppercase;
-  margin: 0;
-  padding: 5px;
-  margin-right: 10px;
-  border: 1px solid var(--fondoBotonHover);
-  border-radius: 5px;
-  background-color: var(--fondoBoton);
 }
 
 /* Estilos generales aplicables a la mayoría de los cuerpos de las páginas */
@@ -282,20 +258,59 @@ main .listado-enlaces > ul > li > ul {
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 footer ul {
-  display: flex;
   margin-top: 12px;
   margin-bottom: 12px;
   font-size: var(--fuentePequena);
+}
+
+footer .copyright {
+  color: var(--logo);
+}
+
+footer nav {
+  flex: 1 1 100%;
 }
 
 footer ul li {
   margin: 0;
   padding: 5px;
   margin-right: 10px;
+}
+
+footer a {
+  color: var(--texto);
+}
+
+footer a:hover {
+  color: var(--fondoBotonHover);
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer nav li {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid var(--fondoBotonHover);
+  border-radius: 5px;
+  background-color: var(--fondoBoton);
 }
 
 /* Estilos para los vídeos de youtube */
