@@ -6,6 +6,7 @@
       name="description"
       content="Página de inicio de la web no oficial de la banda La Oreja de Van Gogh"
     />
+    <meta name="viewport" content="width=device-width" />
     <title>
       Página de inicio de la web no oficial del grupo La Oreja de Van Gogh
     </title>
@@ -14,7 +15,7 @@
   </head>
   <body class="margins">
     <include src="src/header.html"></include>
-    <main>
+    <main class="index">
       <section class="titulo">
         <h1>Portada</h1>
       </section>
@@ -23,9 +24,68 @@
           Bienvenidos a la vibrante historia detrás de La Oreja de Van Gogh!
           Sumérgete en el universo musical de esta emblemática banda española,
           donde cada canción cuenta una historia, cada nota emociona y cada
-          acorde es un viaje. Desde sus inicios hasta sus éxitos más recientes,
-          acompáñanos en este recorrido por la trayectoria de un grupo que ha
-          marcado una época en la música española.
+          acorde es un viaje.
+        </p>
+        <picture>
+          <!-- Imagen en AVIF a 465px -->
+          <source
+            media="(max-width: 466px)"
+            srcset="./images/conciertos/portadaclip.jpg?as=avif&width=465"
+            type="image/avif"
+          />
+          <!-- Imagen en WebP a 465px -->
+          <source
+            media="(max-width: 466px)"
+            srcset="./images/conciertos/portadaclip.jpg?as=webp&width=465"
+            type="image/webp"
+          />
+          <!-- Imagen en JPEG a 466px -->
+          <source
+            media="(max-width: 466px)"
+            srcset="./images/conciertos/portadaclip.jpg?width=465"
+            type="image/jpeg"
+          />
+          <!-- Imagen en AVIF a 768px -->
+          <source
+            media="(max-width: 768px)"
+            srcset="./images/conciertos/portadaclip.jpg?as=avif&width=768"
+            type="image/avif"
+          />
+          <!-- Imagen en WebP a 768px -->
+          <source
+            media="(max-width: 768px)"
+            srcset="./images/conciertos/portadaclip.jpg?as=webp&width=768"
+            type="image/webp"
+          />
+          <!-- Imagen en JPEG a 768px -->
+          <source
+            media="(max-width: 768px)"
+            srcset="./images/conciertos/portadaclip.jpg?width=768"
+            type="image/jpeg"
+          />
+          <!-- Imagen en AVIF a 1200px -->
+          <source
+            media="(max-width: 1200px)"
+            srcset="./images/conciertos/portadaclip.jpg?as=avif&width=1200"
+            type="image/avif"
+          />
+          <!-- Imagen en WebP a 1200px -->
+          <source
+            media="(max-width: 1200px)"
+            srcset="./images/conciertos/portadaclip.jpg?as=webp&width=1200"
+            type="image/webp"
+          />
+          <!-- Imagen en JPEG por defecto -->
+          <img
+            class="estrella-efecto"
+            src="./images/conciertos/portadaclip.jpg?width=768"
+            alt="Otra imagen del grupo en un concierto"
+          />
+        </picture>
+        <p>
+          Desde sus inicios hasta sus éxitos más recientes, acompáñanos en este
+          recorrido por la trayectoria de un grupo que ha marcado una época en
+          la música española.
         </p>
         <figure>
           <img
