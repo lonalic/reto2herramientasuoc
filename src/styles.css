@@ -123,6 +123,10 @@ main.index img {
   height: auto;
 }
 
+.microfono-20 {
+  width: 20%;
+}
+
 .estrella-efecto {
   width: 100%;
   clip-path: polygon(
