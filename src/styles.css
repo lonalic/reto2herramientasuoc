@@ -114,8 +114,11 @@ main .titulo {
 
 /* Estilos para imagenes */
 
-main.index img {
+img.expandir-100 {
   width: 100%;
+}
+
+main.index img {
   max-width: 1200px;
   height: auto;
 }
@@ -134,6 +137,15 @@ main.index img {
     2% 35%,
     39% 35%
   );
+}
+
+svg.sobre:hover .solapa {
+  transform: translateY(-16px);
+}
+
+.solapa {
+  transition: transform 1s;
+  transform-origin: center bottom;
 }
 
 /* Estilos para concierto detalle y conciertos */
