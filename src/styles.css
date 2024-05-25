@@ -182,8 +182,12 @@ main .concierto-detalle article {
 
 main .conciertos-lista article img,
 main .concierto-detalle article img {
-  max-width: 100px;
+  max-width: 50%;
   height: auto;
+}
+
+main .conciertos-lista article figure {
+  margin: 0;
 }
 
 main .conciertos-lista article .autor,
@@ -369,6 +373,13 @@ main.presentacion iframe {
   border: 0;
 }
 
+@media only screen and (min-width: 1025px) {
+  main .conciertos-lista article img,
+  main .concierto-detalle article img {
+    max-width: 1024px;
+  }
+}
+
 /* Estilos para media query de tablet */
 
 @media only screen and (max-width: 768px) {
@@ -395,6 +406,11 @@ main.presentacion iframe {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  main .conciertos-lista article img,
+  main .concierto-detalle article img {
+    max-width: 100%;
+  }
+
   footer ul {
     flex-direction: column;
     align-items: center;
@@ -414,5 +430,9 @@ main.presentacion iframe {
   }
   main .conciertos-lista {
     grid-template-columns: 1fr;
+  }
+  main .conciertos-lista article img,
+  main .concierto-detalle article img {
+    max-width: 100%;
   }
 }

@@ -23,14 +23,98 @@
       <section class="concierto-detalle">
         <article>
           <figure>
-            <img
-              width="270"
-              height="270"
-              src="./images/conciertos/barcelona.jpeg"
-              alt="Imagen del grupo cantando en Barcelona"
-            />
+            <picture>
+              <!-- Imagen en AVIF a 465px -->
+              <source
+                media="(max-width: 466px)"
+                srcset="./images/conciertos/barcelona_466.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 465px -->
+              <source
+                media="(max-width: 466px)"
+                srcset="./images/conciertos/barcelona_466.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 466px -->
+              <source
+                media="(max-width: 466px)"
+                srcset="./images/conciertos/barcelona_466.jpeg"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 768px -->
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/conciertos/barcelona_768.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 768px -->
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/conciertos/barcelona_768.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 768px -->
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/conciertos/barcelona_768.jpeg?width=768"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 512x 1x y 2x -->
+              <source
+                media="(min-width: 769px) and (max-width: 1024px)"
+                srcset="
+                  ./images/conciertos/barcelona_512_1x.jpeg?as=avif 1x,
+                  ./images/conciertos/barcelona_512_2x.jpeg?as=avif 2x
+                "
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 512x 1x y 2x -->
+              <source
+                media="(min-width: 769px) and (max-width: 1024px)"
+                srcset="
+                  ./images/conciertos/barcelona_512_1x.jpeg?as=webp 1x,
+                  ./images/conciertos/barcelona_512_2x.jpeg?as=webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- Imagen en JPG a 512x 1x y 2x -->
+              <source
+                media="(min-width: 769px) and (max-width: 1024px)"
+                srcset="
+                  ./images/conciertos/barcelona_512_1x.jpeg 1x,
+                  ./images/conciertos/barcelona_512_2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF-->
+              <source
+                media="(min-width: 1025px)"
+                srcset="./images/conciertos/barcelona_512_2x.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP-->
+              <source
+                media="(min-width: 1025px)"
+                srcset="./images/conciertos/barcelona_512_2x.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPG -->
+              <source
+                media="(min-width: 1025px)"
+                srcset="./images/conciertos/barcelona_512_2x.jpeg"
+                type="image/jpeg"
+              />
+              <!-- Imagen en JPEG por defecto -->
+              <img
+                class="expandir-100"
+                src="./images/conciertos/barcelona_512_2x.jpeg"
+                alt="Imagen del grupo cantando en Barcelona"
+              />
+            </picture>
             <figcaption>© Bing Dall-E 3</figcaption>
           </figure>
+
           <div>
             <h2>
               <a href="./detalle-barcelona.html" title="Ir a artículo"
