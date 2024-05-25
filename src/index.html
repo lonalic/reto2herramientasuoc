@@ -79,7 +79,7 @@
           <source
             media="(max-width: 1200px)"
             srcset="./images/conciertos/portadaclip.jpg?width=1200"
-            type="image/webp"
+            type="image/jpeg"
           />
           <!-- Imagen en JPEG por defecto -->
           <img
@@ -94,10 +94,34 @@
           la música española.
         </p>
         <figure>
-          <img
-            src="./images/portada.jpeg"
-            alt="Imagen de una representación del grupo en un concierto"
-          />
+          <picture>
+            <!-- Imagen en AVIF a 465px -->
+            <source
+              media="(max-width: 466px)"
+              srcset="./images/portada466.jpeg?as=avif"
+              type="image/avif"
+            />
+            <!-- Imagen en WebP a 465px -->
+            <source
+              media="(max-width: 466px)"
+              srcset="./images/portada466.jpeg?as=webp"
+              type="image/webp"
+            />
+            <!-- Imagen en JPEG a 466px -->
+            <source
+              media="(max-width: 466px)"
+              srcset="./images/portada466.jpeg"
+              type="image/jpeg"
+            />
+            <source srcset="./images/portada.jpeg?as=avif" type="image/avif" />
+            <source srcset="./images/portada.jpeg?as=webp" type="image/webp" />
+            <source srcset="./images/portada.jpeg" type="image/jpeg" />
+            <img
+              class="expandir-100"
+              src="./images/portada.jpeg"
+              alt="Imagen de una representación del grupo en un concierto"
+            />
+          </picture>
           <figcaption>© Bing Dall-E 3</figcaption>
         </figure>
 
