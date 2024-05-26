@@ -10,7 +10,7 @@
         stroke="#596B1E"
         stroke-width="4"
       />
-      <text x="51" y="33" font-family="Arial" font-size="20" font-weight="bold" fill="#023D79">
+      <text x="51" y="33" font-family="Arial" font-size="20" font-weight="bold" fill="#1d1c1c">
         LODVG
       </text>
       <circle cx="21" cy="22" r="13" fill="rgba(65, 79, 21, 0.9)" />
