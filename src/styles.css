@@ -110,6 +110,32 @@ main {
 
 main .titulo {
   text-align: center;
+  animation: animar 4s infinite;
+}
+
+/* Animación css */
+
+@keyframes animar {
+  0% {
+    transform: translateX(0);
+    color: var(--logo);
+  }
+  25% {
+    transform: translateX(-30px);
+    color: var(--fondoBotonHover);
+  }
+  50% {
+    transform: translateX(-90px);
+    color: var(--contrario);
+  }
+  75% {
+    transform: translateX(-30px);
+    color: var(--fondoBotonHover);
+  }
+  100% {
+    transform: translateX(0);
+    color: var(--logo);
+  }
 }
 
 /* Estilos para imagenes */
