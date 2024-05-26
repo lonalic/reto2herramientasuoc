@@ -31,10 +31,43 @@
           historia de la música en español.
         </p>
         <figure>
-          <img
-            src="./images/presentacion.jpeg"
-            alt="Imagen de una representación de uno de los componentes del grupo en un concierto"
-          />
+          <picture>
+            <source
+              media="(max-width: 466px)"
+              srcset="./images/presentacion.jpeg?as=avif&width=465"
+              type="image/avif"
+            />
+            <source
+              media="(max-width: 466px)"
+              srcset="./images/presentacion.jpeg?as=webp&width=465"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 466px)"
+              srcset="./images/presentacion.jpeg?width=465"
+              type="image/jpeg"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/presentacion.jpeg?as=avif&width=768"
+              type="image/avif"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/presentacion.jpeg?as=webp&width=768"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/presentacion.jpeg?width=768"
+              type="image/jpeg"
+            />
+            <img
+              class="expandir-100"
+              src="./images/presentacion.jpeg"
+              alt="Imagen de una representación de uno de los componentes del grupo en un concierto"
+            />
+          </picture>
           <figcaption>© Bing Dall-E 3</figcaption>
         </figure>
 

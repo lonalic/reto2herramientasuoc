@@ -23,12 +23,68 @@
       <section class="concierto-detalle">
         <article>
           <figure>
-            <img
-              width="270"
-              height="270"
-              src="./images/conciertos/valencia1.jpeg"
-              alt="Imagen del grupo cantando en Valencia"
-            />
+            <picture>
+              <!-- Imagen en AVIF a 465px -->
+              <source
+                media="(max-width: 466px)"
+                srcset="./images/conciertos/valencia_466.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 465px -->
+              <source
+                media="(max-width: 466px)"
+                srcset="./images/conciertos/valencia_466.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 466px -->
+              <source
+                media="(max-width: 466px)"
+                srcset="./images/conciertos/valencia_466.jpeg"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 768px -->
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/conciertos/valencia_768.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 768px -->
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/conciertos/valencia_768.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 768px -->
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/conciertos/valencia_768.jpeg?width=768"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF-->
+              <source
+                media="(min-width: 1025px)"
+                srcset="./images/conciertos/valencia-full.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP-->
+              <source
+                media="(min-width: 1025px)"
+                srcset="./images/conciertos/valencia-full.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPG -->
+              <source
+                media="(min-width: 1025px)"
+                srcset="./images/conciertos/valencia-full.jpeg"
+                type="image/jpeg"
+              />
+              <!-- Imagen en JPEG por defecto -->
+              <img
+                class="expandir-100"
+                src="./images/conciertos/valencia-full.jpeg"
+                alt="Imagen del grupo cantando en valencia"
+              />
+            </picture>
             <figcaption>© Bing Dall-E 3</figcaption>
           </figure>
           <div>
@@ -48,6 +104,13 @@
               atmósfera de entusiasmo y emoción que envolvía a todos los
               presentes.
             </p>
+            <img
+              class="microfono-20"
+              width="70"
+              height="70"
+              src="./images/microfono.svg"
+              alt="Representación de micrófono"
+            />
             <p>
               Con una puesta en escena espectacular y una entrega total por
               parte de la banda, el concierto en Valencia fue un viaje musical
