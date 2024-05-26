@@ -125,7 +125,7 @@ main .titulo {
     color: var(--fondoBotonHover);
   }
   50% {
-    transform: translateX(-90px);
+    transform: translateX(-60px);
     color: var(--contrario);
   }
   75% {
@@ -182,6 +182,7 @@ svg.sobre:hover .solapa {
 
 main .concierto-detalle {
   display: flex;
+  flex-direction: column;
   font-size: var(--fuentePequena);
 }
 
@@ -189,6 +190,11 @@ main .conciertos-lista {
   display: grid;
   font-size: var(--fuentePequena);
   grid-template-columns: repeat(4, 1fr);
+}
+
+main .conciertos-lista > div {
+  /* Excluir el título del grid */
+  grid-column: 1 / -1;
 }
 
 main .conciertos-lista a,
