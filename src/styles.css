@@ -82,7 +82,7 @@ a {
 
 /* Estilos para el header */
 
-header section.logo {
+header div.logo {
   text-align: center;
   display: block;
   font-size: var(--fuenteGrande);
@@ -460,7 +460,7 @@ main.presentacion iframe {
 /* Estilos para media query de móvil */
 
 @media only screen and (max-width: 466px) {
-  header section.logo {
+  header div.logo {
     font-size: var(--fuentePequenaExtra);
     letter-spacing: -2px;
     line-height: 23px;
