@@ -2,9 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Página de conciertos de la web no oficial del grupo La Oreja de Van Gogh" />
+    <meta
+      name="description"
+      content="Página de conciertos de la web no oficial del grupo La Oreja de Van Gogh"
+    />
     <meta name="viewport" content="width=device-width" />
-    <title>Página de conciertos de la web no oficial del grupo La Oreja de Van Gogh</title>
+    <title>
+      Página de conciertos de la web no oficial del grupo La Oreja de Van Gogh
+    </title>
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="app.js"></script>
   </head>
@@ -17,12 +22,50 @@
       <section class="conciertos-lista">
         <article id="barcelona">
           <figure>
-            <img
-              width="270"
-              height="270"
-              src="./images/conciertos/barcelona.jpeg"
-              alt="Imagen del grupo cantando en Barcelona"
-            />
+            <picture>
+              <!-- Imagen en AVIF a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="
+                  ./images/conciertos/barcelona_466.jpeg?as=avif&width=330
+                "
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="
+                  ./images/conciertos/barcelona_466.jpeg?as=webp&width=330
+                "
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/barcelona_466.jpeg?width=330"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 465px -->
+              <source
+                srcset="./images/conciertos/barcelona_466.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 465px -->
+              <source
+                srcset="./images/conciertos/barcelona_466.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 466px -->
+              <source
+                srcset="./images/conciertos/barcelona_466.jpeg"
+                type="image/jpeg"
+              />
+
+              <img
+                src="./images/conciertos/barcelona_466.jpeg"
+                alt="Imagen del grupo cantando en Barcelona"
+              />
+            </picture>
             <figcaption>© Bing Dall-E 3</figcaption>
           </figure>
           <div>
@@ -39,7 +82,10 @@
               grupo hizo vibrar al público catalán con su energía y pasión
               inigualables.
             </p>
-            <a href="./detalle-barcelona.html" title="Ir a artículo" class="leer-mas"
+            <a
+              href="./detalle-barcelona.html"
+              title="Ir a artículo"
+              class="leer-mas"
               >Leer más</a
             >
             <span class="autor">
@@ -47,20 +93,56 @@
               <time datetime="2021-11-15">15 de noviembre de 2023</time>
             </span>
           </div>
-        </article id="valencia">
-        <article>
+        </article>
+        <article id="valencia">
           <figure>
-            <img
-              width="270"
-              height="270"
-              src="./images/conciertos/valencia1.jpeg"
-              alt="Imagen del grupo cantando en Valencia"
-            />
+            <picture>
+              <!-- Imagen en AVIF a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/valencia1.jpeg?as=avif&width=330"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/valencia1.jpeg?as=webp&width=330"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/valencia1.jpeg?width=330"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 465px -->
+              <source
+                srcset="./images/conciertos/valencia1.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 465px -->
+              <source
+                srcset="./images/conciertos/valencia1.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 465px -->
+              <source
+                srcset="./images/conciertos/valencia1.jpeg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/conciertos/valencia1.jpeg"
+                alt="Imagen del grupo cantando en Valencia"
+              />
+            </picture>
+
             <figcaption>© Bing Dall-E 3</figcaption>
           </figure>
           <div>
             <h2>
-              <a href="./detalle-valencia.html" title="Ir a artículo">Concierto en Valencia</a>
+              <a href="./detalle-valencia.html" title="Ir a artículo"
+                >Concierto en Valencia</a
+              >
             </h2>
             <p>
               La Plaza de Toros de Valencia fue testigo de un espectáculo
@@ -70,7 +152,12 @@
               resonaron en el aire, creando una atmósfera mágica que quedará
               grabada en la memoria de todos los asistentes.
             </p>
-            <a href="./detalle-valencia.html" title="Ir a artículo" class="leer-mas">Leer más</a>
+            <a
+              href="./detalle-valencia.html"
+              title="Ir a artículo"
+              class="leer-mas"
+              >Leer más</a
+            >
             <span class="autor">
               Por Sergio Candela -
               <time datetime="2021-10-15">15 de octubre de 2023</time>
@@ -79,12 +166,45 @@
         </article>
         <article id="sevilla">
           <figure>
-            <img
-              width="270"
-              height="270"
-              src="./images/conciertos/sevilla1.jpeg"
-              alt="Imagen del grupo cantando en Sevilla"
-            />
+            <picture>
+              <!-- Imagen en AVIF a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/sevilla1.jpeg?as=avif&width=330"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/sevilla1.jpeg?as=webp&width=330"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/sevilla1.jpeg?width=330"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 465px -->
+              <source
+                srcset="./images/conciertos/sevilla1.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 465px -->
+              <source
+                srcset="./images/conciertos/sevilla1.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 465px -->
+              <source
+                srcset="./images/conciertos/sevilla1.jpeg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/conciertos/sevilla1.jpeg"
+                alt="Imagen del grupo cantando en Sevilla"
+              />
+            </picture>
             <figcaption>© Bing Dall-E 3</figcaption>
           </figure>
           <div>
@@ -109,12 +229,45 @@
         </article>
         <article id="murcia">
           <figure>
-            <img
-              width="270"
-              height="270"
-              src="./images/conciertos/murcia1.jpeg"
-              alt="Imagen del grupo cantando en Murcia"
-            />
+            <picture>
+              <!-- Imagen en AVIF a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/murcia1.jpeg?as=avif&width=330"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/murcia1.jpeg?as=webp&width=330"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/murcia1.jpeg?width=330"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 465px -->
+              <source
+                srcset="./images/conciertos/murcia1.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 465px -->
+              <source
+                srcset="./images/conciertos/murcia1.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 465px -->
+              <source
+                srcset="./images/conciertos/murcia1.jpeg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/conciertos/murcia1.jpeg"
+                alt="Imagen del grupo cantando en Murcia"
+              />
+            </picture>
             <figcaption>© Bing Dall-E 3</figcaption>
           </figure>
           <div>
